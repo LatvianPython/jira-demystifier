@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+h3 {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  height: 100%;
+  width: 100%;
+}
+body {
+  padding-top: 45px;
+  padding-bottom: 65px;
+}
+@media (max-width: 900000px) {
+  body {
+    padding-top: 45px;
+  }
+}
+.jumbotron.issue_page {
+  background: #ffffff;
+}
+.jumbotron.issue_page {
+  padding-top: 0px;
+}
+.jumbotron.main_page{
+  padding-top: 2em;
+}
+td {
+ white-space:pre
+}
+.issue {
+  line-height: 1;
+  width: 20em;
+  height: 15em;
+  margin: 1em;
+  padding: 0em;
+  color: #000000;
+  background: #eeeeee;
+  display: inline-block;
+  float: left;
+  border-radius: 1em;
+  position: relative;
+}
+a.issue:hover{
+  color: #000000 !important;
+}
+.issue .header {
+  margin-bottom: 0.5em;
+  margin-left: 0.5em;
+  float: left;
+  width: 18em;
+}
+.issue .header div {
+  margin-top: 0.4em;
+}
+.issue .header .issue_number {
+  font-size: 1.9em;
+  font-weight: 600;
+}
+.issue .header .summary {
+  min-height: 3em;
+  margin-right: 0.5em;
+  font-size: 0.8em;
+  word-wrap: break-word;
+}
+.issue .description {
+  float: right;
+  width: 18.5em;
+  padding-top: 0.8em;
+  border-top: 0.05em;;
+  border-top-style: solid;
+  border-top-color: lightgray;
+}
+.issue .descriptor {
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: 8.75em;
+  margin-left: 0.5em;
+  margin-bottom: 0.8em;
+}
+.issue .descriptor label {
+  font-size: 1.1em;
+  color: gray;
+}
+.issue .issue_color {
+  width: 1.5em;
+  float: left;
+  height: 15em;
+  border-bottom-left-radius: 1em;
+  border-top-left-radius: 1em;
+}
+.issue.grey .issue_color{
+  background-color: grey;
+}

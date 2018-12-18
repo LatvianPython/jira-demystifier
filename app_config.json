@@ -1,0 +1,26 @@
+{
+  "jira_url": "https://jira.atlassian.com",
+  "descriptors": [
+    {
+      "label": "Severity",
+      "field_path": ["fields", "customfield_17130", "value"],
+      "default": " "
+    },
+    {
+      "label": "Priority",
+      "field_path": ["fields", "priority", "name"],
+      "default": " "
+    },
+    {
+      "label": "Reference count",
+      "field_path": ["fields", "customfield_10610"],
+      "default": 0
+    },
+    {
+      "label": "Status",
+      "field_path": ["fields", "status", "name"],
+      "default": " "
+    }
+  ],
+  "jql": "project =\"JIRA Server (including JIRA Core)\" and issuetype = Bug and resolution = Unresolved and assignee is not EMPTY and priority = High "
+}

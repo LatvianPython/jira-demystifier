@@ -1,0 +1,44 @@
+<?py # -*- coding: utf-8 -*- ?>
+<?py #@ARGS issues?><!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="encoding" content="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="/css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css">
+    <link href="/css/site.css" media="all" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="data">
+    <div class="jumbotron issue_page">
+        <div class="row">
+            <div class="issues col">
+                <div class="row justify-content-center justify-content-md-start">
+                    <?py for issue in issues: ?>
+                    <a class="issue ${issue['issue_color']} col-auto">
+                        <div>
+                            <div class="issue_color"></div>
+                            <div class="header">
+                                <div class="issue_number">${issue['issue_key']}</div>
+                                <div class="summary">${issue['summary']}</div>
+                            </div>
+                            <div class="description">
+                                <?py for descriptor in issue['descriptors']: ?>
+                                <div class="descriptor">
+                                    <label>${descriptor[0]}</label>
+                                    <div>${descriptor[1]}</div>
+                                </div>
+                                <?py #endfor ?>
+                            </div>
+                        </div>
+                    </a>
+                    <?py #endfor ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/js/jquery-3.3.1.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>

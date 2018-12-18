@@ -1,0 +1,27 @@
+{
+    "/": {
+        "tools.gzip.on": true,
+        "tools.gzip.mime_types": ["text/html", "text/plain", "text/javascript", "text/css", "application/javascript"]
+    },
+    "/css/site.css": {
+        "tools.staticfile.filename": "\\css\\site.css",
+        "tools.staticfile.on": true
+    },
+    "/css/bootstrap.min.css": {
+        "tools.staticfile.filename": "\\css\\bootstrap.min.css",
+        "tools.staticfile.on": true
+    },
+    "/js/bootstrap.min.js": {
+        "tools.staticfile.filename": "\\js\\bootstrap.min.js",
+        "tools.staticfile.on": true
+    },
+    "/js/jquery-3.3.1.min.js": {
+        "tools.staticfile.filename": "\\js\\jquery-3.3.1.min.js",
+        "tools.staticfile.on": true
+    },
+    "global": {
+        "server.socket_host": "127.0.0.1",
+        "server.socket_port": 8080,
+        "server.thread_pool": 8
+    }
+}
